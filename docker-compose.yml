@@ -1,0 +1,20 @@
+services:
+  python:
+    build: .
+    container_name: pytorch
+    tty: true
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ".:/workspace"
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
+    command:
+      - sh
+      - -c
+      - |
+        sh
