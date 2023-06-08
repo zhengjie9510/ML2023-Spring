@@ -3,3 +3,9 @@ libriphone
 runs
 model.ckpt
 prediction.csv
+test
+train
+valid
+# sample_best.ckpt
+sample_log.txt
+# submission.csv
