@@ -1,20 +1,24 @@
 services:
   python:
     build: .
-    container_name: pytorch
     tty: true
-    environment:
-      - TZ=Asia/Shanghai
+    privileged: true
     volumes:
-      - ".:/workspace"
+      - "$PWD:/workspace"
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
     restart: unless-stopped
     deploy:
       resources:
         reservations:
           devices:
-            - capabilities: [ gpu ]
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
     command:
       - sh
       - -c
       - |
+        nvidia-smi
+        date
         sh
