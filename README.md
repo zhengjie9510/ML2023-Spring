@@ -24,7 +24,7 @@ Solve a classification problem with deep neural networks (DNNs)
 
 ![img](ML2023-HW02/leaderboard.png)
 
-# HWO3:
+# HW03:
 Solve image classification with convolutional neural networks(CNN).
 
 | Baseline | Public Score | Private Score |
