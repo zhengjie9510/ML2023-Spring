@@ -47,3 +47,18 @@ Classify the speakers of given features.
 | simple | 0.66025 | - |
 
 ![img](ML2023-HW04/leaderboard.png)
+
+# HW05:
+Machine Translation. 
+
+# HW07:
+Extractive Question Answering. 
+
+| Baseline | Public Score | Private Score |
+| :----: | :----: | :----: |
+| boss | 0.84108 | - |
+| strong | 0.75936 | - |
+| medium | 0.67139 | - |
+| simple | 0.46481 | - |
+
+![img](ML2023-HW07/leaderboard.png)
